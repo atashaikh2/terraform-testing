@@ -33,5 +33,5 @@ resource "azurerm_user_assigned_identity" "example" {
 
 data "azurerm_key_vault_key" "example" {
   name         = "super-secret"
-  key_vault_id = data.azurerm_key_vault.existing.id
+  key_vault_id = "azurerm_key_vault"
 }
