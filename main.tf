@@ -31,7 +31,7 @@ resource "azurerm_user_assigned_identity" "example" {
   name = "registry-uai"
 }
 
-data "azurerm_key_vault_key" "example" {
+data "azurerm_key_vault_key" {
   name         = "super-secret"
   key_vault_id = "https://shaikh.vault.azure.net/"
 }
